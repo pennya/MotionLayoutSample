@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/scene_01"
+    app:layoutDescription="@xml/scene_03"
     app:showPaths="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,10 +29,10 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <View
+    <ImageView
         android:id="@+id/button"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@color/black"/>
+        android:src="@drawable/ic_android_black_24dp"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
