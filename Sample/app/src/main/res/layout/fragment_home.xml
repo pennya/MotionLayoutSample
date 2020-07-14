@@ -29,10 +29,11 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
+    <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/button"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@drawable/ic_android_black_24dp"/>
+        android:src="@drawable/ic_android_black_24dp"
+        app:altSrc="@drawable/ic_android_white_24dp"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

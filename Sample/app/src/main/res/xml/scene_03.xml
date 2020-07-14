@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <Transition
         motion:constraintSetStart="@id/start"
-        motion:constraintSetEnd="@id/end">
+        motion:constraintSetEnd="@id/end"
+        motion:motionInterpolator="linear">
 
         <OnSwipe
             motion:dragDirection="dragLeft"
@@ -23,8 +24,8 @@
             motion:layout_constraintLeft_toLeftOf="parent">
 
             <CustomAttribute
-                motion:attributeName="tint"
-                motion:customColorValue="#000000"/>
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0"/>
 
         </Constraint>
     </ConstraintSet>
@@ -40,8 +41,8 @@
             motion:layout_constraintRight_toRightOf="parent">
 
             <CustomAttribute
-                motion:attributeName="tint"
-                motion:customColorValue="#FFFFFF" />
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
 
         </Constraint>
     </ConstraintSet>
